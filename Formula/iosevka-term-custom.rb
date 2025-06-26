@@ -11,9 +11,15 @@ class IosevkaTermCustom < Formula
   depends_on "node"
   depends_on "ttfautohint"
 
+  resource "build-plans" do
+    url "https://raw.githubusercontent.com/jmederosalvarado/homebrew-iosevka-custom/refs/heads/main/Formula/build-plans.toml"
+    sha256 "7910e6b42cddfcff39c27fb5ce02ebefadd93adcf6b293fc47aef4a96cbe0f50"
+  end
+
   def install
-    # Copy the build plan from the formula repo
-    cp buildpath/"Formula/build-plans.toml", "private-build-plans.toml"
+    resource("build-plans").stage do
+      cp "build-plans.toml", buildpath/"private-build-plans.toml"
+    end
 
     # Install npm dependencies
     system "npm", "install"

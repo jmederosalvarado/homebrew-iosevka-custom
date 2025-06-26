@@ -12,8 +12,8 @@ class IosevkaTermCustom < Formula
   depends_on "ttfautohint"
 
   resource "build-plans" do
-    url "https://raw.githubusercontent.com/jmederosalvarado/homebrew-iosevka-custom/refs/heads/main/Formula/build-plans.toml"
-    sha256 "7910e6b42cddfcff39c27fb5ce02ebefadd93adcf6b293fc47aef4a96cbe0f50"
+    url "https://raw.githubusercontent.com/jmederosalvarado/homebrew-iosevka-custom/refs/heads/main/Resource/build-plans.toml"
+    sha256 "8ee0f6b8ac27a3dba4f9b7f4a06a160ef92df1b869a4a65e6d237984d1ea45a4"
   end
 
   def install

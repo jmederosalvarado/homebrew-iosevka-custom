@@ -2,10 +2,10 @@ class IosevkaTermCustom < Formula
   desc "Custom build of Iosevka Term font"
   homepage "https://github.com/be5invis/Iosevka"
   # Fetch the latest release tag dynamically, or hardcode a version for stability
-  version "latest"
+  version "33.2.5"
   # Replace with the actual latest release tarball URL and SHA256
   url "https://github.com/be5invis/Iosevka/archive/refs/tags/v33.2.5.tar.gz"
-  sha256 ""
+  sha256 "3fc1f3c59ee77dec2e8bf533805da4c2a6f7e6c22c7a2e2bb1e757c858c4909c"
   license "OFL-1.1"
 
   depends_on "node"
